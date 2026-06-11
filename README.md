@@ -5,7 +5,7 @@ Uma página web moderna, semântica e totalmente responsiva contendo ensinamento
 ## 🚀 Demonstração
 
 Você pode visualizar o projeto online clicando no link abaixo:
-> 🌐 [**Acessar o Projeto Online**](LINK_DO_SEU_SITE_AQUI)
+> 🌐 [**Acessar o Projeto Online**](https://rabeloodev.github.io/Jesus-cristo-page/)
 
 ---
 
@@ -28,9 +28,3 @@ O projeto foi construído utilizando tecnologias web nativas e uma das principai
 *   **Wrapper Controlador Geral (`.site-container`):** Arquitetura CSS limpa onde uma div mestre dita a largura e a centralização horizontal, tornando o layout escalável e livre de quebras.
 
 ---
-
-## 📦 Como Rodar o Projeto Localmente
-
-1. Clone o repositório em sua máquina:
-```bash
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
