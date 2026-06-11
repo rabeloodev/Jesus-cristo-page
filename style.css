@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --cor0: #B94B00;
+  --cor1: #A02E00;
+  --cor2: #DD6800;
+  --cor3: #D55200;
+  --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: var(--fonte-padrao);
+  background-color: beige;
+  width: 100%;
+}
+
+.site-container {
+  margin: 20px auto; 
+  width: 90%;
+  max-width: 900px; 
+  background-color: #fff; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); 
+  border-radius: 12px; 
+  overflow: hidden; 
+}
+
+
+.two, .quadro, .principal, .four, .five, .six, .seven, .eight {
+  padding: 40px; 
+  background-color: transparent; 
+  width: 100%; 
+}
+
+.container { 
+  font-family: var(--fonte-padrao);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 20px;
+  background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+  width: 100%; 
+}
+
+.cristo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fafafa;
+  display: block;
+}
+
+/* Quem é Jesus? */
+.two > h1 {
+  text-align: justify;
+  margin-bottom: 10px;
+  color: #973C00;
+}
+
+.two > h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e6d47a;
+  margin-top: 10px;
+}
+
+.two > p {
+  line-height: 1.8;
+  font-size: 16px;
+  text-align: justify;
+  color: #2f2b5b;
+  margin-bottom: 25px;
+}
+
+/* Plano de Salvação */
+.plano-salvacao {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.quadro > h2 {
+  text-align: left;
+  color: var(--cor1);
+}
+
+.quadro > h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e6d47a;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: var(--bg-cor);
+  border-radius: 8px;
+  padding: 16px 24px;
+  border-left: 5px solid var(--borda-cor); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  width: 100%;
+}
+
+.card h3 {
+  color: var(--borda-cor);
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.card p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Cores dos cards */
+.vermelho { --borda-cor: #cc1f1f; --bg-cor: #fff5f5; }
+.laranja { --borda-cor: #dd6b20; --bg-cor: #fffaf0; }
+.amarelo { --borda-cor: #b7791f; --bg-cor: #fffdf0; }
+.verde { --borda-cor: #38a169; --bg-cor: #f0fff4; }
+.azul { --borda-cor: #3182ce; --bg-cor: #ebf8ff; }
+
+/* Milagres e Poder */
+.principal {
+  padding: 50px 40px;
+}
+
+.principal > h2 {
+  color: var(--cor0);
+}
+
+.principal > h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e6d47a;
+  margin-top: 10px;
+}
+
+.principal > ul {
+  line-height: 1.8;
+  list-style-position: inside;
+}
+
+.principal ul li {
+  margin-bottom: 12px;
+  color: #4a5568;
+}
+
+.principal ul li::marker {
+  color: #d1b838;
+}
+
+/* O que Jesus Faz Por Você */
+.four > h2 {
+  color: #973C00;
+}
+
+.four > h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e6d47a;
+  margin-top: 10px;
+}
+
+.grid-beneficios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.card-box {
+  background-color: var(--bg-cor);
+  border-radius: 12px;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.card-box h3 {
+  color: var(--texto-cor);
+  margin: 0 0 12px 0;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.card-box p {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.card-laranja { --bg-cor: #fffbf0; --texto-cor: #b7791f; }
+.card-marrom { --bg-cor: #fff7f2; --texto-cor: #a04e2a; }
+.card-verde { --bg-cor: #f0fff4; --texto-cor: #276749; }
+.card-azul { --bg-cor: #ebf8ff; --texto-cor: #2b6cb0; }
+.card-roxo { --bg-cor: #faf5ff; --texto-cor: #6b46c1; }
+.card-rosa { --bg-cor: #fff5f7; --texto-cor: #b83280; }
+
+@media (max-width: 600px) {
+  .grid-beneficios {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Palavras de Jesus */
+.five > h2 {
+  color: #973C10;
+}
+
+.five > h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e6d47a;
+  margin-top: 10px;
+}
+
+.beneficios {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.beneficios .card p {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.beneficios .card footer {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--borda-cor);
+}
+
+/* Você Quer Aceitar Jesus Hoje? */
+.quadro-orange { 
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 48px 40px;
+  background-image: linear-gradient(to right, var(--cor2), var(--cor3));
+  border-radius: 12px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 20px auto;
+  align-items: flex-start;
+}
+
+.quadro-orange h2, .quadro-orange p {
+  color: #fff;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.quadro-orange h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.caixa-oracao {
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.caixa-oracao p {
+  font-style: italic;
+  color: #fff;
+}
+
+/* Continue Sua Jornada */
+.jornada {
+  width: 100%;
+  margin: 40px;
+}
+
+.jornada h2 {
+  color: #973C00;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.jornada h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e6d47a;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.botoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+
+.btn:hover { filter: brightness(0.9); }
+.btn:active { transform: scale(0.98); }
+.btn-marrom { background-color: #b94b00; }
+.btn-vermelho { background-color: #c53000; }
+.btn-verde { background-color: #008737; }
+
+/* Rodapé */
+.rotape-pagina {
+  background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rotape-pagina h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rotape-pagina p {
+  font-size: 0.95rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.rotape-pagina small {
+  font-size: 0.8rem;
+  font-style: italic;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.rotape-pagina a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.rotape-pagina a:hover {
+  text-decoration: underline;
+  opacity: 0.9s;
+}
