@@ -6,12 +6,18 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: Cinzel;
+  src: url(./fonts/Cinzel-Regular.otf);
+}
+
 :root {
   --cor0: #B94B00;
   --cor1: #A02E00;
   --cor2: #DD6800;
   --cor3: #D55200;
-  --fonte-padrao: Arial, Helvetica, sans-serif;
+  --fonte-padrao: sans-serif;
+  --titulo: Cinzel
 }
 
 body {
@@ -38,7 +44,7 @@ body {
 }
 
 .container { 
-  font-family: var(--fonte-padrao);
+  font-family: var(--titulo);
   color: #fff;
   display: flex;
   flex-direction: column;
