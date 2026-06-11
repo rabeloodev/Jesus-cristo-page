@@ -1,9 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-alert("Script carregado!"); // Se esse alerta aparecer no celular, o JS está funcionando.
-gsap.registerPlugin(ScrollTrigger);
-// ... restante do código
-
 gsap.from(".quadro .card", {
     opacity: 0,
     x: -40,
